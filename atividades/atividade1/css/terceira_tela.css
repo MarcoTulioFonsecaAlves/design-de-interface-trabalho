@@ -13,9 +13,9 @@ body {
     border: 10px solid rgb(18, 195, 248);
     background-color: lightblue;
     padding-top: 50px;
-    padding-right: 30px;
+    padding-right: 90px;
     padding-bottom: 50px;
-    padding-left: 80px;
+    padding-left: 90px;
     font-family: Signika Negative;
     text-align: center;
     box-shadow: 0px 0px 15px currentcolor;
@@ -71,7 +71,9 @@ body {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-    height: 230px;
+    height: 700px;
+    width: 1000px;
+    position: static;
   }
 
 #palavra_resposta {
@@ -97,9 +99,8 @@ body {
     margin-bottom: 60px;
     width: 100%;
     font-size: 16px;
-    padding: 40px;
+    padding: 10px;
     padding-top: 30px;
-    padding-bottom: 90px;
 }
 
 /* NavBar */
@@ -150,4 +151,9 @@ body {
 #btnmenu:hover  {
   background-color: #03fcf4;
   color: black;
+}
+
+.flip-card-back {
+    margin-left: -100px;
+    margin-right: -100px;
 }
