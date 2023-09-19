@@ -71,8 +71,8 @@ body {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-    height: 700px;
     width: 1000px;
+    height: 648px;
     position: static;
   }
 
@@ -156,4 +156,9 @@ body {
 .flip-card-back {
     margin-left: -100px;
     margin-right: -100px;
+}
+
+.carousel {
+  background-color: #035e5b;
+  background-image: radial-gradient( rgb(14, 247, 255), #2980b9 60%);
 }
