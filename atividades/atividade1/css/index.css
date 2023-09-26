@@ -56,6 +56,7 @@ body {
   
   .flip-card-front, .flip-card-back {
     position: absolute;
+    border-radius: 40px;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
@@ -150,4 +151,18 @@ body {
 #btnmenu:hover  {
   background-color: #03fcf4;
   color: black;
+}
+
+#titulo {
+  width: 300px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  background-color: #5affcd;
+  border-radius: 10px;
+  color: rgb(245, 44, 111);
+  animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  50% {color: rgb(19, 15, 241);}
 }

@@ -4,29 +4,32 @@
     <title>Atividade 1</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="js/index.js">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One:regular" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
-    <link rel="stylesheet" href="img/memelol.gif">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,regular,500,600,700" rel="stylesheet" />
-
+    
     <!--Script da Navbar-->
     <script src="js/index.js"></script>
   </head>
 <body style="background-color: rgb(0, 43, 43);">
     <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
         <div id="navbar11" class="container-fluid">
-          <a style="font-family: Dancing Script;" class="navbar-brand">ATIVIDADE 1</a>
+          <div >
+          <a id="titulo" style="font-family: Lilita One" class="navbar-brand">ATIVIDADE 1</a>
+        </div>
           <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </a>
+          <!--O que faz apareçer a tela que arrasta na esquerda do site-->
           <div style="background-color: rgb(40, 52, 75);" id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a id="btnmenu" href="index.html">Tela Inicial</a>
             <a id="btnmenu" href="segunda_tela.html">Segunda Tela</a>
             <a id="btnmenu" href="terceira_tela.html">Terceira Tela</a>
           </div>
+          
           <button id="menubtn"><span style="color: aqua; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></button>
         </div>
       </nav>
@@ -35,6 +38,7 @@
         resumo de 2 unidades curriculares do curso.</div>
 
     <br>
+    <!--Cartão Giratório-->
     <div id="cartao" class="container">
     <div class="flip-card">
         <div class="flip-card-inner">
