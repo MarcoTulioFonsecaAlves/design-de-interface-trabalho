@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 500px 500px;
+    padding: 30px;
+    padding-left: 150px;
+  }
+  
+  .grid-item {
+    background-color: rgba(23, 161, 196, 0.8);
+    border: 10px solid rgba(12, 106, 160, 0.8);
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.card-img-top {
+    height: 500px;
+    border: 10px solid #0828dd;
+}
+
+.card-text {
+    padding-top: 200px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.card-title {
+    padding-top: 20px;
+}
