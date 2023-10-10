@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 1</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,regular,500,600,700" rel="stylesheet" />
+    <style>
+      .cartao {
+            width: 14.6rem;
+            height: 30.3rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            border-radius: .7rem;
+            border: .1rem #c9c7c7 solid;
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            background-color: antiquewhite;
+        }
+
+        .titulo {
+            margin: 0 0 1rem 0;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            color: white;
+            padding: .3rem 2rem;
+            background-color: blue;
+            border: none;
+        }
+    </style>
+    <!--Script da Navbar-->
+    <script src="js/index.js"></script>
+  </head>
+<body style="background-color: rgb(0, 43, 43);">
+    <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
+        <div id="navbar11" class="container-fluid">
+          <div >
+          <a id="titulo" style="font-family: Lilita One" class="navbar-brand">ATIVIDADE DE INTERFACE</a>
+        </div>
+          <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <!--O que faz apareçer a tela que arrasta na esquerda do site-->
+          <div style="background-color: rgb(40, 52, 75);" id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="btnmenu" href="index.html">Tela Inicial</a>
+            <a id="btnmenu" href="atividade1.html">Atividade 1 - Parte 1</a>
+            <a id="btnmenu" href="atividade01.html">Atividade 1 - Parte 2</a>
+            <a id="btnmenu" href="atividade2.html">Atividade 2</a>
+            <a id="btnmenu" href="atividade3.html">Atividade 3</a>
+          </div>
+          
+          <button id="menubtn"><span style="color: aqua; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></button>
+        </div>
+      </nav>
+    
+      <div class="cartao">
+        <h1 class="titulo">Victor</h1>
+        <div class="corpo">
+            <img style="width: 200px;" src="img2/ryangosling" alt="foto.avif" class="imagem">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <footer class="rodape">
+            <a href="curriculo.html">Currículo</a>
+            <button>Ok</button>
+        </footer>
+    </div>
+
+
+
+
+
+
+   
+</body>
+</html>
