@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 1</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,regular,500,600,700" rel="stylesheet" />
+    
+    <!--Script da Navbar-->
+    <script src="js/index.js"></script>
+  </head>
+<body style="background-color: rgb(0, 43, 43);">
+    <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
+        <div id="navbar11" class="container-fluid">
+          <div >
+          <a id="titulo" style="font-family: Lilita One" class="navbar-brand">ATIVIDADE DE INTERFACE</a>
+        </div>
+          <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <!--O que faz apareçer a tela que arrasta na esquerda do site-->
+          <div style="background-color: rgb(40, 52, 75);" id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="btnmenu" href="index.html">Tela Inicial</a>
+            <a id="btnmenu" href="atividade1.html">Atividade 1 - Parte 1</a>
+            <a id="btnmenu" href="atividade01.html">Atividade 1 - Parte 2</a>
+            <a id="btnmenu" href="atividade2.html">Atividade 2</a>
+            <a id="btnmenu" href="atividade3.html">Atividade 3</a>
+            <a id="btnmenu" href="atividade4.html">Atividade 4</a>
+            <a id="btnmenu" href="atividade5.html">Atividade 5 - Parte 1</a>
+            <a id="btnmenu" href="Atividade 5/receita.html">Atividade 5 - Parte 2</a>
+          </div>
+          
+          <button id="menubtn"><span style="color: aqua; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></button>
+        </div>
+      </nav>
+      <div>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr class="1">
+                <th onclick="alert('Você clicou em um Nome')">Nome</th>
+                <th onclick="alert('Você clicou na Cor favorita')">Cor favorita</th>
+                <th onclick="alert('Você clicou no Animal Favorito')">Animal favorito</th>
+            </tr>
+            <tr class="2">
+                <td onclick="alert('Você clicou no nome')">Laura</td>
+                <td onclick="alert('Você clicou na cor')">vermelho</td>
+                <td onclick="alert('Você clicou no animal')">cervo</td>
+            </tr>
+            <tr class="3">
+                <td onclick="alert('Você clicou no nome')">Júlia</td>
+                <td onclick="alert('Você clicou na cor')">rosa</td>
+                <td onclick="alert('Você clicou no animal')">gato</td>
+            </tr>
+            <tr class="4">
+                <td onclick="alert('Você clicou no nome')">Pedro</td>
+                <td onclick="alert('Você clicou na cor')">azul</td>
+                <td onclick="alert('Você clicou no animal')">elefante</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr class="1">
+                <th onclick="alert('Você clicou na Disciplina')">Disciplina</th>
+                <th onclick="alert('Você clicou no Aluno')">Aluno</th>
+                <th  onclick="alert('Você clicou na Nota da A1')">Nota A1</th>
+                <th  onclick="alert('Você clicou na Nota da A2')">Nota A2</th>
+                <th  onclick="alert('Você clicou na Nota da A3')">Nota A3</th>
+            </tr>
+            <tr class="2">
+                <td rowspan="3"  onclick="alert('Matemática 5')"> UC 1</td>
+                <td  onclick="alert('Aluno número 1')">Laura</td>
+                <td  onclick="alert('Aprovado')">30</td>
+                <td  onclick="alert('Aprovado')">27</td>
+                <td  onclick="alert('Aprovado')">39</td>
+            </tr>
+            <tr class="3">
+                <td  onclick="alert('Aluno número 2')">Júlia</td>
+                <td  onclick="alert('Aprovado')">28</td>
+                <td  onclick="alert('Aprovado')">30</td>
+                <td  onclick="alert('Aprovado')">38</td>
+            </tr>
+            <tr class="4">
+                <td  onclick="alert('Aluno número 3')">Pedro</td>
+                <td  onclick="alert('Aprovado')">27</td>
+                <td  onclick="alert('Aprovado')">29</td>
+                <td  onclick="alert('Aprovado')">40</td>
+            </tr>
+            <td rowspan="3"  onclick="alert('Design de interface')"> UC 2</td>
+            <td onclick="alert('Aluno número 1')">Laura</td>
+            <td onclick="alert('Aprovado')">30</td>
+            <td onclick="alert('Aprovado')">27</td>
+            <td onclick="alert('Aprovado')">39</td>
+            </tr>
+            <tr class="3">
+                <td onclick="alert('Aluno número 2')">Júlia</td>
+                <td onclick="alert('Aprovado')">28</td>
+                <td onclick="alert('Aprovado')">30</td>
+                <td onclick="alert('Aprovado')">38</td>
+            </tr>
+            <tr class="4">
+                <td onclick="alert('Aluno número 3')">Pedro</td>
+                <td onclick="alert('Aprovado')">27</td>
+                <td onclick="alert('Aprovado')">29</td>
+                <td onclick="alert('Aprovado')">40</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table border="1" cellpadding="15" cellspacing="0">
+            <tr id="terceira0" class="1">
+                <th onclick="alert('Você clicou nas Disciplinas!')">Disciplina</th>
+                <th onclick="alert('Você clicou nos alunos!')">Aluno</th>
+                <th onclick="alert('Você clicou na nota da A1!')">Nota A1</th>
+                <th onclick="alert('Você clicou na nota da A2!')">Nota A2</th>
+                <th onclick="alert('Você clicou na Nota da A3!')">Nota A3</th>
+                <th onclick="alert('Você clicou no total!')">Total</th>
+            </tr>
+            <tr id="terceira" class="2">
+                <td rowspan="3" onclick="alert('Você clicou no parágrafo!')"> UC 1</td>
+                <td onclick="alert('Aluno número 1')">Laura</td>
+                <td onclick="alert('Aprovado')">30</td>
+                <td onclick="alert('Aprovado')">27</td>
+                <td onclick="alert('Aprovado')">39</td>
+                <td onclick="alert('Aprovado')">96</td>
+            </tr>
+            <tr id="terceira" class="3">
+                <td onclick="alert('Aluno número 2')">Júlia</td>
+                <td onclick="alert('Aprovado')">28</td>
+                <td onclick="alert('Aprovado')">30</td>
+                <td onclick="alert('Aprovado')">38</td>
+                <td onclick="alert('Aprovado')">96</td>
+            </tr>
+            <tr id="terceira" class="4">
+                <td onclick="alert('Aluno número 3')">Pedro</td>
+                <td onclick="alert('Aprovado')">27</td>
+                <td onclick="alert('Aprovado')">29</td>
+                <td onclick="alert('Aprovado')">40</td>
+                <td onclick="alert('Aprovado')">96</td>
+            </tr>
+            <td id="terceira2" rowspan="3"> UC 2</td>
+            <td id="terceira2" onclick="alert('Aluno número 1')">Laura</td>
+            <td id="terceira2" onclick="alert('Aprovado')">30</td>
+            <td id="terceira2" onclick="alert('Aprovado')">27</td>
+            <td id="terceira2" onclick="alert('Aprovado')">39</td>
+            <td id="terceira2" onclick="alert('Aprovado')">96</td>
+            <tr id="terceira2" class="3">
+                <td onclick="alert('Aluno número 2')">Júlia</td>
+                <td onclick="alert('Aprovado')">28</td>
+                <td onclick="alert('Aprovado')">30</td>
+                <td onclick="alert('Aprovado')">38</td>
+                <td onclick="alert('Aprovado')">96</td>
+            </tr>
+            <tr id="terceira2" class="4">
+                <td onclick="alert('Aluno número 3')">Pedro</td>
+                <td onclick="alert('Aprovado')">27</td>
+                <td onclick="alert('Aprovado')">29</td>
+                <td onclick="alert('Aprovado')">40</td>
+                <td onclick="alert('Aprovado')">96</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+   
+</body>
+</html>

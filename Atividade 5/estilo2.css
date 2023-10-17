@@ -4,15 +4,13 @@
     text-align: center;
 }
 
+
+
 .cartao {
-    background-color: aquamarine;
-    width: 21rem;
-    height: 22rem;
+    width: 10rem;
+    height: 16rem;
     padding: 1rem;
-    margin-top: 80px;
-    margin-left: 30.5rem ;
-    margin-right: 10rem ;
-    margin-bottom: 10rem ;
+    margin: 10rem auto;
     border-radius: 3rem;
     border: 6px #9b8989 solid;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -20,55 +18,29 @@
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    position: fixed;
     
 
     
 }
 
 h1 {
-    text-align: center;
     font-size:large;
-    margin-bottom: 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
 h3 {
-    text-align: center;
     font-size: small;
-    margin-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-#conta{
-    margin-left: 45px;
-}
-
-#senha{
-    margin-left: 45px;
-    margin-bottom: 4px;
-}
-
-#botoes{
-    margin-left: 20px;
-}
-
-#botoes2{
-    margin-left: 65px;
-}
-
 .cartao2 {
-    
-    background-color: aquamarine;
-    width: 21rem;
-    height: 32rem;
+    background-color: #ddd3d3;
+    width: 12rem;
+    height: 16rem;
     padding: 1rem;
-    margin-top: 40px;
-    margin-left: 30.5rem ;
-    margin-right: 10rem ;
-    margin-bottom: 10rem ;
+    margin: 10rem auto;
     border-radius: 3rem;
     border: 6px #9b8989 solid;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -76,7 +48,6 @@ h3 {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    position: fixed;
     img {
         width: 30;
         height: auto;
@@ -135,6 +106,7 @@ h3 {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    font-display: ;
     img {
         width: 30;
         height: auto;
@@ -160,6 +132,7 @@ h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    font-display: ;
     img {
         width: 30;
         height: auto;
@@ -168,10 +141,6 @@ h3 {
 
 
     
-}
-
-input{
-    width: 200px;
 }
 
 

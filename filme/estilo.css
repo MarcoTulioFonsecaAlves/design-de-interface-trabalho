@@ -1,0 +1,53 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(83, 82, 82);
+    color:white 
+    
+}
+
+img{
+    height: 210px;
+}
+
+img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+header{
+    background-color: red;
+    font-size: 50px;
+    font-family: Righteous;
+}
+
+footer{
+    background-color: red;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  
+}
+
+button {
+    color: white;
+    padding: .3rem 2rem;
+    background-color: red;
+    border: none;
+}
