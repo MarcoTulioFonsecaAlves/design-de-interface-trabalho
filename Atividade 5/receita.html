@@ -3,37 +3,7 @@
 <head>
     <title>Receitas Deliciosas</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            
-            
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-
-        nav {
-            background-color: #444;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 20px;
-        }
+        
 
         .recipe {
             max-width: 800px;
@@ -62,10 +32,12 @@
         width: 600px;
         margin-top: 30px;
         margin-left: 370px;
+      }
 
         #texto_caixa{
             background: rgba(0, 0, 0, 0.5);
             width: 400px;
+            border-radius: 8px;
         
         }
 
@@ -77,7 +49,25 @@
             margin-left: 50px;
             margin-right: 50px;
         }
+
+
+        img {
+          border-radius: 16px;
+          height: 500px; 
+          width: 600px;
+          border: 13px solid rgb(1, 0, 71);
+        }
+
+        .carousel-inner{
+          transition: transform .2s;
+        }
+
+        .carousel-inner:hover {
+          -ms-transform: scale(1.06); /* IE 9 */
+          -webkit-transform: scale(1.06); /* Safari 3-8 */
+          transform: scale(1.06); 
 }
+
     </style>
     <title>Atividade 1</title>
     <link rel="stylesheet" href="../css/index.css">
@@ -94,7 +84,7 @@
     <!--Script da Navbar-->
     <script src="../js/index.js"></script>
 </head>
-<body style="background-color: rgb(0, 158, 206);">
+<body style="background-color: rgb(161, 233, 255);">
     <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
         <div id="navbar11" class="container-fluid">
           <div >
@@ -119,6 +109,7 @@
         </div>
       </nav>
 
+      <div id="fundo_carrosseu">
       <div id="carrosseu" style="width: 600px;" class="carousel slide" data-bs-ride="carousel">
 
         <!-- Indicators/dots -->
@@ -131,7 +122,7 @@
         <!-- The slideshow/carousel -->
         <div class="carousel-inner" style="width: 600px;">
           <div class="carousel-item active">
-            <a href="Bolo de chocolate.html"><img src="bolo de chocolate.avif" style="border: 60px;height: 500px; width: auto;" alt=""></a>
+            <a href="Bolo de chocolate.html"><img class="receita_img" src="bolo de chocolate.avif"></a>
             <div id="texto_caixa" style="margin-left: 10px;" class="carousel-caption">
                 <div id="div_texto">
                 <h2 id="texto">Bolo de Chocolate</h2>
@@ -140,7 +131,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="Torta de maçã.html"><img src="torta de maçã.jfif" style="height: 500px; width: auto;" alt=""></a>
+            <a href="Torta de maçã.html"><img class="receita_img" src="torta de maçã.jfif"></a>
             <div id="texto_caixa" style="margin-left: 10px;" class="carousel-caption">
                 <div id="div_texto">
                     <h2>Torta de Maçã</h2>
@@ -149,7 +140,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="torta de laranja.html"><img src="torta-de-laranja-molhadinha.jpg" style="height: 500px; width: auto;" alt=""></a>
+            <a href="torta de laranja.html"><img class="receita_img" src="torta-de-laranja-molhadinha.jpg"></a>
             <div id="texto_caixa" style="margin-left: 10px;" class="carousel-caption">
                 <div id="div_texto">
                     <h2>Torta de laranja</h2>
@@ -167,6 +158,7 @@
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
+    </div>
 
 
     <!--<div class="recipe">
