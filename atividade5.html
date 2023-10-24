@@ -15,30 +15,58 @@
     <script src="js/index.js"></script>
   </head>
 <body style="background-color: rgb(0, 43, 43);">
-    <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
-        <div id="navbar11" class="container-fluid">
-          <div >
-          <a id="titulo" style="font-family: Lilita One" class="navbar-brand">ATIVIDADE DE INTERFACE</a>
+  <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
+    <div id="navbar11" class="container-fluid">
+      <div >
+      <a id="titulo" style="font-family: Lilita One" class="navbar-brand">ATIVIDADE DE INTERFACE</a>
+    </div>
+      <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <!--O que faz apareçer a tela que arrasta na esquerda do site-->
+      <div style="background-color: rgb(40, 52, 75);" id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="btnmenu" href="index.html">Tela Inicial</a>
+        <a class="dropdown-btn">Atividade 1 
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-container">
+          <a href="atividade1.html">Parte 1</a>
+          <a href="atividade01.html">Parte 2</a>
         </div>
-          <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </a>
-          <!--O que faz apareçer a tela que arrasta na esquerda do site-->
-          <div style="background-color: rgb(40, 52, 75);" id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a id="btnmenu" href="index.html">Tela Inicial</a>
-            <a id="btnmenu" href="atividade1.html">Atividade 1 - Parte 1</a>
-            <a id="btnmenu" href="atividade01.html">Atividade 1 - Parte 2</a>
-            <a id="btnmenu" href="atividade2.html">Atividade 2</a>
-            <a id="btnmenu" href="atividade3.html">Atividade 3</a>
-            <a id="btnmenu" href="atividade4.html">Atividade 4</a>
-            <a id="btnmenu" href="atividade5.html">Atividade 5 - Parte 1</a>
-            <a id="btnmenu" href="Atividade 5/receita.html">Atividade 5 - Parte 2</a>
-          </div>
-          
-          <button id="menubtn"><span style="color: aqua; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></button>
+        <a id="btnmenu" href="atividade2.html">Atividade 2</a>
+        <a id="btnmenu" href="atividade3.html">Atividade 3</a>
+        <a id="btnmenu" href="atividade4.html">Atividade 4</a>
+        <a class="dropdown-btn">Atividade 5 
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-container">
+          <a href="atividade5.html">Parte 1</a>
+          <a href="Atividade 5/receita.html">Parte 2</a>
         </div>
-      </nav>
+      </div>
+
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+      
+      <button id="menubtn"><span style="color: aqua; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></button>
+    </div>
+  </nav>
       <div class="painel">
         <div class="cartao">
             <div style="margin-top: 30px;">
