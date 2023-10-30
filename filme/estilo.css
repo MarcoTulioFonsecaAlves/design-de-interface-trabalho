@@ -1,12 +1,9 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(83, 82, 82);
-    color:white 
-    
 }
 
 img{
-    height: 210px;
+    height: 300px;
 }
 
 img:hover{
@@ -21,25 +18,19 @@ img:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 10px;
-    padding-top: 10px;
+    column-gap: 30px;
+    padding-top: 50px;
     padding-bottom: 10px;
     
 }
 
-header{
-    background-color: red;
-    font-size: 50px;
-    font-family: Righteous;
-}
-
 footer{
-    background-color: red;
+    background-color: rgb(141, 0, 0);
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(141, 0, 0);
     color: white;
     text-align: center;
   
@@ -48,6 +39,73 @@ footer{
 button {
     color: white;
     padding: .3rem 2rem;
-    background-color: red;
+    background-color: rgb(141, 0, 0);
     border: none;
+}
+
+#navbarmaster {
+    background-color: rgb(141, 0, 0);
+    box-shadow: 0px 0px 15px currentcolor;
+    border-bottom: 2px solid currentcolor;
+    padding: 15px;
+  }
+
+/* NavBar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#btnmenu {
+  color: #ffffff;
+}
+
+#btnmenu:hover  {
+  background-color: #ce605c;
+  color: black;
+}
+
+#titulo {
+  width: 300px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 10px;
+  color: rgb(255, 129, 129);
+  animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  50% {color: rgb(255, 255, 255);}
 }

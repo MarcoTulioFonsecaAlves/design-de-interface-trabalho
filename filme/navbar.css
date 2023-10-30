@@ -4,6 +4,14 @@
     
 }
 
+#titulo2{
+    font-size: 50px;
+    text-align: center;
+    font-family: Righteous;
+    color: white;
+    margin-right: 117px;
+}
+
 #menubtn {
     border-radius: 4px;
     background-color: transparent;
@@ -62,8 +70,8 @@
 }
 
 .dropdown-btn:hover  {
-  background-color: #03fcf4;
-  color: black;
+  background-color: #000000;
+  color: rgb(255, 0, 0);
 }
 
 .dropdown-btn span {
@@ -93,7 +101,8 @@
 
 /* On mouse-over */
 .dropdown-btn:hover {
-  color: #000000;
+    background-color: #ce605c;
+  color: black;
 }
 
 .dropdown-container a:hover{

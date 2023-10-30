@@ -7,7 +7,7 @@ tr:hover {
     background-color: #cad1df !important;
     color: #f18a04;
     font-weight: bold;
-
+    cursor: context-menu;
     font-size: 1.5rem;
     background-color: rgb(107, 101, 92);
 }
@@ -30,4 +30,10 @@ tr:nth-child(odd) {
 #terceira2{
     background-color: rgb(151, 224, 144);
     font-style: italic;
+}
+
+.tabelas{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 500px;
 }

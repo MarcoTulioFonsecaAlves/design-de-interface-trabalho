@@ -5,23 +5,20 @@
 }
 
 .cartao {
+    
     background-color: aquamarine;
     width: 21rem;
     height: 22rem;
     padding: 1rem;
-    margin-top: 80px;
-    margin-left: 30.5rem ;
-    margin-right: 10rem ;
-    margin-bottom: 10rem ;
+    margin: auto;
+    margin-top: 100px;
     border-radius: 3rem;
     border: 6px #9b8989 solid;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    position: fixed;
-    
+    font-size: small;    
 
     
 }

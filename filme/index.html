@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: rgb(83, 82, 82);">
 
 <head>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <meta charset="UTF-8">
     <title>Cine Flix</title>
     <script src="https://kit.fontawesome.com/3eb3152d90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="navbar.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,regular,500,600,700" rel="stylesheet" />
+    <!--Script da Navbar-->
+    <script src="../js/index.js"></script>
    
 </head>
 
 <body>
-    <div>
-    <header>
-        Cine FliX
-    </header>
+
+    <nav id="navbarmaster"class="navbar navbar-expand-sm navbar-dark">
+        <div id="navbar11" class="container-fluid">
+          <div >
+          <a id="titulo" style="font-family: Lilita One" class="navbar-brand">ATIVIDADE DE INTERFACE</a>
+        </div>
+        <a id="titulo2">Cine FliX</a>
+          <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <!--O que faz apareçer a tela que arrasta na esquerda do site-->
+          <div style="background-color: rgb(0, 0, 0);" id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="btnmenu" href="../index.html">Tela Inicial</a>
+            <a class="dropdown-btn">Atividade 1 
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+              <a href="../atividade1.html">Parte 1</a>
+              <a href="../atividade01.html">Parte 2</a>
+            </div>
+            <a id="btnmenu" href="../atividade2.html">Atividade 2</a>
+            <a id="btnmenu" href="../atividade3.html">Atividade 3</a>
+            <a id="btnmenu" href="../atividade4.html">Atividade 4</a>
+            <a class="dropdown-btn">Atividade 5 
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+              <a href="../atividade5.html">Parte 1</a>
+              <a href="../Atividade 5/receita.html">Parte 2</a>
+            </div>
+          </div>
+
+          <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+          
+          <button id="menubtn"><span style="color: white; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></button>
+        </div>
+      </nav>
+
+    <div style="background-color: rgb(83, 82, 82);">
 
     <main class="container">
         <div class="filme"><a href="americanpsycho.html"><img src="americanpsycho" alt="Filme " ></a></div>
