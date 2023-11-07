@@ -11,6 +11,7 @@ img:hover{
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.1);
   transition: transform .2s;
+  box-shadow: 0px 0px 15px rgb(255, 5, 5);
 }
 
 .container {
@@ -25,7 +26,6 @@ img:hover{
 }
 
 .container img{
-  box-shadow: 0px 0px 15px rgb(255, 0, 0);
   border-radius: 3%;
 }
 
