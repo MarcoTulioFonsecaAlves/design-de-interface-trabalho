@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Troco</title>
+</head>
+<body>
+    <h1>Calculadora de Troco</h1>
+    
+    <script>
+        function calcularTroco() {
+            const valorCompra = parseFloat(prompt("Digite o valor da compra: R$ "));
+            const valorPago = parseFloat(prompt("Digite o valor pago: R$ "));
+
+            if (valorPago < valorCompra) {
+                console.log("Quantia paga é insuficiente para realizar a compra.");
+            } else {
+                let troco = valorPago - valorCompra;
+                const notasDisponiveis = [50, 20, 10, 5, 2, 1];
+
+                console.log("Troco: R$", troco.toFixed(2));
+                console.log("Notas a serem devolvidas:");
+
+                for (const nota of notasDisponiveis) {
+                    if (troco >= nota) {
+                        const quantidade = Math.floor(troco / nota);
+                        console.log(`${quantidade} nota(s) de R$${nota.toFixed(2)}`);
+                        troco -= quantidade * nota;
+                    }
+                }
+            }
+        }
+
+        calcularTroco();
+    </script>
+
+</body>
