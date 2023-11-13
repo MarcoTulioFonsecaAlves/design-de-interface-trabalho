@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/3eb3152d90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous:regular" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lilita+One:regular" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
@@ -79,8 +80,20 @@
     <div style="background-color: rgb(83, 82, 82);">
 
     <main class="container">
-        <div class="filme"><img onclick="document.getElementById('id01').style.display='block'" src="americanpsycho" alt="Filme " ></a></div>
-        
+        <div class="filme"><img id="myImage" src="americanpsycho" alt="Filme"></a></div>
+        <!-- Modal -->
+        <!--<div id="myModal" class="modal w3-animate-opacity">
+        <div style="width: 80%;" class="modal-content">
+        <span class="close">&times;</span>
+        <p>Conteúdo da modal aqui...</p>
+        </div>
+        </div>-->
+        <div id="myModal" class="modal w3-animate-opacity">
+          <div style="width: 80%; height: 800px; margin-top: 10px; margin-bottom: 10px;" class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="iframeContent" src="" frameborder="0" width="100%" height="100%"></iframe>
+          </div>
+        </div>
         <div class="filme"><a href="drive.html"><img src="Drive" alt="Filme "></a></div>
         <div class="filme"><a href="FightClub.html"><img src="FightClub" alt="Filme "></a></div>
         <div class="filme"><a href="whiplash.html"><img src="whiplash" alt="Filme "></a></div>
@@ -108,6 +121,32 @@
       </div>
     </footer>
     </div>
+    <script>
+      // Obtém a referência para a imagem e a modal
+      var img = document.getElementById("myImage");
+      var modal = document.getElementById("myModal");
+      
+      // Obtém a referência para o elemento de fechar a modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // Quando a imagem é clicada, exibe a modal
+      img.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById("iframeContent").src = "americanpsycho.html"; // Substitua com o URL do site desejado
+      }
+      
+      // Quando o usuário clica no elemento de fechar, esconde a modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // Quando o usuário clica fora da modal, também a esconde
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
 </body>
 
 </html>
